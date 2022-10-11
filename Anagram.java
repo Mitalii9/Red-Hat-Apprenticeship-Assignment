@@ -26,14 +26,14 @@ public class Anagram {
         }
 
         //Storing the character count of each string in hashmaps
-        HashMap<Character,Integer> hm1 =new HashMap<Character, Integer>();
-        HashMap<Character,Integer> hm2 =new HashMap<Character, Integer>();
-        /*for(int i=0;i<str1.length();i++){
+        HashMap<Character,Integer> hm1 =new HashMap<>();
+        HashMap<Character,Integer> hm2 =new HashMap<>();
+        for(int i=0;i<str1.length();i++){
             hm1.put(str1.charAt(i),
                     hm1.getOrDefault(str1.charAt(i),0)+1);
             hm2.put(str2.charAt(i),
                     hm2.getOrDefault(str2.charAt(i),0)+1);
-        }*/
+        }
 
         //if the character count of both string are equal then they are anagrams
         if(hm1.equals(hm2)){
@@ -46,4 +46,4 @@ public class Anagram {
 }
 
 //Time Complexity:O(N)
-//Space Complexity:)=O(N)
+//Space Complexity:O(N)
